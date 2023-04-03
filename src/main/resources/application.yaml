@@ -1,0 +1,6 @@
+graphql:
+  packages:
+    - "com.luxoft.ness.tmdbgraphql"
+spring:
+  profiles:
+    active: "dev"
