@@ -1,8 +1,8 @@
-name: Create and publish a docker image to GitHub Packages
+name: Create and publish a docker image to GitHub Packages from the tag name
 on:
   push:
-    branches:
-      - release
+    tags:
+      - v*
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
